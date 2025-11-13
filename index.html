@@ -1,0 +1,576 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='circleGradient' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300b914' /%3E%3Cstop offset='100%25' stop-color='%23007d0e' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23circleGradient)' stroke='%23005f09' stroke-width='4' /%3E%3Ccircle cx='50' cy='50' r='48' fill='none' stroke='%23005f09' stroke-opacity='0.3' stroke-width='3' /%3E%3Cpath d='M30 50 l12 12 l28 -28' fill='none' stroke='%23000' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E">
+
+    <meta name="description"
+    content="Access syw.accountonline.com to manage your Shop Your Way Credit Card. Check balance, view statements, make payments, and troubleshoot login issues securely online.">
+<meta name="keywords"
+    content="syw.accountonline.com, Shop Your Way Credit Card login, manage SYW card, pay credit card bill, view statements, account management, SYW Citi card support">
+
+<!-- Open Graph Meta -->
+<meta property="og:title" content="SYW Account Online: Shop Your Way Credit Card Login & Management">
+<meta property="og:description"
+    content="Log in to syw.accountonline.com to access your Shop Your Way Credit Card account. Manage payments, view statements, and get support for your SYW Citi card.">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card Meta -->
+<meta name="twitter:title" content="SYW Account Online: Shop Your Way Credit Card Login">
+<meta name="twitter:description"
+    content="Easily log in to syw.accountonline.com to manage your Shop Your Way Credit Card. Pay bills, view balance, download statements, and resolve login issues.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="format-detection" content="telephone=no">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif !important;
+    }
+        /* small custom styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .banner-bg {
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* subtle glass effect for header */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(6px);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800 bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full z-40 top-0 left-0">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center px-10 mt-2 justify-between h-16 glass rounded-md shadow-2xl">
+                <!-- Left: Logo / Brand -->
+                <div class="flex items-center gap-3">
+                    <a href="#home" class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+                            <!-- Gradient for the Circle -->
+                            <defs>
+                                <linearGradient id="circleGradient" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#00b914" />
+                                    <stop offset="100%" stop-color="#007d0e" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Stylish Circle -->
+                            <circle cx="50" cy="50" r="45" fill="url(#circleGradient)" stroke="#005f09"
+                                stroke-width="4" />
+
+                            <!-- Shadow Effect for the Circle -->
+                            <circle cx="50" cy="50" r="48" fill="none" stroke="#005f09" stroke-opacity="0.3"
+                                stroke-width="3" />
+
+                            <!-- Stylish Checkmark -->
+                            <path d="M30 50 l12 12 l28 -28" fill="none" stroke="#fff" stroke-width="6"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                filter="drop-shadow(1px 1px 2px rgba(0,0,0,0.5))" />
+                        </svg>
+                        <div class="hidden sm:block">
+                            <span class="font-semibold text-lg">syw.accountonline.com</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Right: Nav links -->
+                <nav class="hidden md:flex items-center gap-6">
+                   
+                    <a href="#section2" class="text-sm hover:text-indigo-600">Managing My SYW Credit Card</a>
+                    <a href="#section3" class="text-sm hover:text-indigo-600">Create New Account</a>
+                    <a href="#section4" class="text-sm hover:text-indigo-600">Recover or Reset Your Password</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileBtn" aria-label="Open menu" class="p-2 rounded-md focus:outline-none focus:ring-2">
+                        <svg id="openIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile nav panel -->
+        <div id="mobileNav" class="hidden md:hidden bg-white/90 backdrop-blur-sm border-t">
+            <div class="max-w-3xl mx-auto px-4 py-3 flex flex-col gap-2">
+                <a href="#section1" class="py-2">Introduction</a>
+                <a href="#section2" class="py-2">Managing My SYW Credit Card</a>
+                <a href="#section3" class="py-2">Create New Account</a>
+                <a href="#section4" class="py-2">Recover or Reset Your Password</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Banner / Hero -->
+        <section id="home" class="banner-bg min-h-screen mt-[-80px] flex items-center" style="background-image: url('images/2.jpg')">
+            <div class="w-full bg-black/30 min-h-screen flex items-center">
+                <div class="max-w-5xl mx-auto px-6 py-24 text-center text-white">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight drop-shadow-lg">
+                        Manage Your SYW Account Online, Anytime
+                    </h1>
+                    <p class="mt-4 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto">
+                        Securely access your Shop Your Way Credit Card account to view statements, make payments, and track your rewards with ease.
+                    </p>
+                    <div class="mt-8 flex justify-center gap-4">
+                        <a href="https://www.shopyourway.com/credithub/overview" class="inline-block px-6 py-3 rounded-full bg-white text-indigo-600 font-semibold shadow-md hover:shadow-lg">
+                            Sign In to Your Account
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+      <div class="max-w-4xl mx-auto px-6 py-6 bg-white rounded-lg shadow">
+  <h2 class="text-lg font-semibold mb-2">Quick Navigation</h2>
+  <ul class="list-disc list-inside text-gray-700 space-y-1">
+    <li><a href="#section1" class="text-indigo-600">Introduction</a></li>
+    <li><a href="#section2" class="text-indigo-600">Managing Your SYW Credit Card</a></li>
+    <li><a href="#section3" class="text-indigo-600">Create Account</a></li>
+    <li><a href="#section4" class="text-indigo-600">Reset Password</a></li>
+    <li><a href="#section5" class="text-indigo-600">View Account</a></li>
+    <li><a href="#section6" class="text-indigo-600">Update Information</a></li>
+    <li><a href="#section7" class="text-indigo-600">FAQ</a></li>
+  </ul>
+</div>
+
+
+        <!-- Sections: 8 headings with content -->
+        <section id="section1" class="max-w-5xl mx-auto px-6 py-20">
+            <h2 class="text-3xl font-bold mb-4">Welcome to Your SYW Account Online Manage Your Shop Your Way Credit Card Easily</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Access your Shop Your Way Credit Card account online anytime, anywhere. With our secure, user-friendly portal, you can check your account balance, review transaction history, view and download statements, make one-time or automatic payments, and track your rewards points all in one place.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                The SYW Account Online portal is designed to simplify your financial management. Set up account alerts to stay informed about payment due dates, reward milestones, and special offers. Enjoy a seamless, mobile-friendly experience that puts control of your finances at your fingertips.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4">
+                Whether you are a long-time cardholder or new to the Shop Your Way program, our online tools help you maximize your rewards and manage your account efficiently. Start exploring your SYW account today to take full advantage of exclusive offers and maintain complete visibility of your financial activities.
+            </p>
+        </section>
+
+
+        <section id="section2" class="bg-white shadow-sm border-t">
+            <div class="max-w-5xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold mb-6">My Experience Managing My SYW Credit Card Online</h2>
+
+                <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                    <li>
+                        <strong>Visiting the Official SYW Portal:</strong> The first time I logged in, I made sure to go directly to
+                        <a href="https://www.shopyourway.com/credithub/overview" class="text-indigo-600">syw.accountonline.com</a>. It gave me peace of mind knowing I was on the secure, official site.
+                    </li>
+
+                    <li>
+                        <strong>Signing In:</strong> Entering my username and password was straightforward. For new users, registering online was simple, and the process guided me step by step.
+                    </li>
+
+                    <li>
+                        <strong>Enabling Two-Factor Authentication (2FA):</strong> I turned on 2FA for extra security. Every time I log in, I receive a code on my phone, which really reassures me that my account is safe.
+                    </li>
+
+                    <li>
+                        <strong>Checking My Balance and Transactions:</strong> I love that the dashboard clearly shows my current balance, pending transactions, and available credit. It helps me plan my spending and avoid surprises.
+                    </li>
+
+                    <li>
+                        <strong>Downloading Statements:</strong> I regularly download my monthly statements. It’s easy to see exactly where my money goes, and I can keep a personal record for budgeting.
+                    </li>
+
+                    <li>
+                        <strong>Making Payments:</strong> Making a one-time payment is simple, and I even set up automatic payments so I never miss a due date. The process is fast, and I can choose my preferred payment method.
+                    </li>
+
+                    <li>
+                        <strong>Tracking Rewards:</strong> Monitoring my Shop Your Way points has been fun. I can see how close I am to redeeming discounts or gift cards, which motivates me to make smarter purchases.
+                    </li>
+
+                    <li>
+                        <strong>Setting Up Alerts:</strong> I set up notifications for payment reminders and reward milestones. These alerts have helped me stay on top of my account and avoid late fees.
+                    </li>
+
+                    <li>
+                        <strong>Maintaining Security:</strong> I always log out after using the portal, avoid public Wi-Fi when accessing my account, and make sure my devices and browser are up to date. This keeps my account secure.
+                    </li>
+
+                    <li>
+                        <strong>Getting Help:</strong> There were a few times I faced login issues, but SYW customer support was easy to reach and very helpful. They guided me through resetting my password and resolving account locks quickly.
+                    </li>
+                </ol>
+
+                <p class="text-gray-700 mt-6">
+                    Overall, managing my SYW Credit Card online has been a smooth and secure experience. Following these steps has helped me stay organized, maximize rewards, and feel confident in my account management.
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="section3" class="max-w-5xl mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold mb-6">Create a New SYW Account</h2>
+
+            <h3 class="text-2xl font-semibold mb-4">Step-by-Step Registration Guide</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                When I decided to create a new SYW Account, the registration process was straightforward and secure. Here’s how I did it:
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                <li><strong>Visit the Official Portal:</strong> I went to <a class="text-indigo-600">syw.accountonline.com</a> to start the registration.</li>
+                <li><strong>Click "Register":</strong> On the homepage, I selected the “Register” option to begin creating my account.</li>
+                <li><strong>Provide Personal Information:</strong> I entered my full name, date of birth, email address, and the last four digits of my Shop Your Way Credit Card for verification.</li>
+                <li><strong>Create Login Credentials:</strong> I chose a strong username and password. I also enabled two-factor authentication (2FA) for added security.</li>
+                <li><strong>Accept Terms and Conditions:</strong> I carefully read and accepted the SYW account terms and privacy policy to complete the registration.</li>
+                <li><strong>Confirm Email:</strong> A confirmation email was sent to my inbox. Clicking the link verified my account instantly.</li>
+                <li><strong>Sign In:</strong> After confirmation, I signed in using my new credentials to access my account dashboard and explore features.</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Requirements for a New Account</h3>
+            <p class="text-gray-700 leading-relaxed">
+                To create a new SYW Account, I made sure I had the following ready:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                <li>A valid Shop Your Way Credit Card or membership information.</li>
+                <li>Personal details including full name, date of birth, and address.</li>
+                <li>A valid email address to receive confirmation and notifications.</li>
+                <li>A secure password and, optionally, a mobile device for two-factor authentication.</li>
+                <li>Internet access through a secure device or browser to prevent unauthorized access.</li>
+            </ul>
+
+            <p class="text-gray-700 mt-6">
+                Overall, setting up my SYW Account was easy and quick. Following these steps helped me create a secure account and start managing my Shop Your Way Credit Card online immediately.
+            </p>
+        </section>
+
+
+        <section id="section4" class="bg-white shadow-sm border-t">
+            <div class="max-w-5xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold mb-6">Recover or Reset Your Password</h2>
+                <br>
+                <h3 class="text-2xl font-semibold mb-4">Forgot Password? Here's How to Reset</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    I once forgot my SYW Account password, but resetting it was quick and straightforward. Here’s what I did:
+                </p>
+                <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                    <li><strong>Go to the Login Page:</strong> I navigated to <a href="https://www.shopyourway.com/credithub/overview" class="text-indigo-600">syw.accountonline.com</a> and clicked “Forgot Password.”</li>
+                    <li><strong>Enter My Account Details:</strong> I typed my username or registered email address associated with my SYW account.</li>
+                    <li><strong>Receive Verification Code:</strong> SYW sent me a code via email or SMS to verify my identity.</li>
+                    <li><strong>Create a New Password:</strong> After verification, I entered a new, strong password and confirmed it.</li>
+                    <li><strong>Sign In:</strong> With my new password, I successfully logged into my account and resumed managing my finances.</li>
+                </ol>
+                <br>
+                <h3 class="text-2xl font-semibold mt-6 mb-4">Enhancing Your Account Security</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    During the reset process, I also took steps to improve my account security:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>Enabled two-factor authentication (2FA) for added protection.</li>
+                    <li>Created a unique, strong password combining letters, numbers, and special characters.</li>
+                    <li>Avoided using public Wi-Fi or shared devices when accessing my account.</li>
+                    <li>Regularly monitored account activity to detect any unusual transactions early.</li>
+                    <li>Updated my email and phone number to ensure I receive security alerts promptly.</li>
+                </ul>
+
+                <p class="text-gray-700 mt-6">
+                    Following these steps made me feel confident that my SYW Account is secure. Resetting a password is quick, and combining it with security best practices keeps my account safe at all times.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="section5" class="max-w-5xl mx-auto px-6 py-16">
+            <h2 class="text-3xl font-bold mb-6">View Your SYW Account Details</h2>
+
+            <h3 class="text-2xl font-semibold mb-4">Check Your Balance and Transactions</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                One of the first things I do when logging into my SYW Account is check my balance and recent transactions. The dashboard is intuitive and provides a clear overview of my current credit card balance, available credit, and any pending transactions.
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                <li><strong>Log in to Your Account:</strong> I go to <a href="https://www.shopyourway.com/credithub/overview" class="text-indigo-600">SYW Account Online</a> and enter my credentials.</li>
+                <li><strong>Navigate to the Dashboard:</strong> The dashboard shows my current balance, total rewards, and a summary of recent purchases.</li>
+                <li><strong>Review Transactions:</strong> I can click on individual transactions to see details, including date, merchant, and amount spent.</li>
+                <li><strong>Monitor Pending Charges:</strong> Any transactions that haven’t cleared yet are displayed, which helps me track upcoming payments accurately.</li>
+            </ol>
+
+            <h3 class="text-2xl font-semibold mt-6 mb-4">Download Your Account Statements</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                I also regularly download my account statements for personal records and budgeting. This feature is very convenient for keeping track of monthly spending and ensuring there are no discrepancies.
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                <li><strong>Access the Statements Section:</strong> From the dashboard, I navigate to the "Statements" tab.</li>
+                <li><strong>Select the Month:</strong> I choose the specific month or date range for which I want to download the statement.</li>
+                <li><strong>Download PDF:</strong> Clicking the download button generates a PDF of the statement, which I can save on my device or print.</li>
+                <li><strong>Review and Save:</strong> I review the statement carefully and save it for future reference, budgeting, or tax purposes.</li>
+            </ol>
+
+            <p class="text-gray-700 mt-6">
+                Being able to view my balance, track transactions, and download statements makes managing my SYW Account effortless and secure. It also helps me plan payments and maximize my rewards effectively.
+            </p>
+        </section>
+
+        <section id="section6" class="bg-white shadow-sm border-t">
+            <div class="max-w-5xl mx-auto px-6 py-16">
+                <h2 class="text-3xl font-bold mb-6">Update Your Personal Information</h2>
+
+                <h3 class="text-2xl font-semibold mb-4">Changing Contact Details</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    I recently needed to update my contact information on my SYW Account. The process was straightforward and secure. Here’s how I updated my phone number and email address:
+                </p>
+                <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                    <li><strong>Log in to Your Account:</strong> I visited <a href="https://www.shopyourway.com/credithub/overview" class="text-indigo-600">SYW Account Online</a> and entered my credentials.</li>
+                    <li><strong>Access Account Settings:</strong> I clicked on the “Profile” or “Account Settings” tab in the dashboard.</li>
+                    <li><strong>Edit Contact Information:</strong> I updated my email address and mobile number. The portal clearly indicated which fields were required.</li>
+                    <li><strong>Save Changes:</strong> After reviewing the information, I clicked “Save” to update my contact details.</li>
+                    <li><strong>Verify Changes:</strong> I received a confirmation email to ensure my new contact details were registered successfully.</li>
+                </ol>
+
+                <h3 class="text-2xl font-semibold mt-6 mb-4">Updating Payment or Billing Info</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Updating my payment or billing information was just as easy. This is important to ensure my payments process correctly and avoid any late fees.
+                </p>
+                <ol class="list-decimal list-inside text-gray-700 leading-relaxed space-y-4">
+                    <li><strong>Navigate to Payment Settings:</strong> Within my account dashboard, I clicked on “Payment Methods” or “Billing Info.”</li>
+                    <li><strong>Add or Update Payment Details:</strong> I added a new bank account or updated my existing card information. The portal guided me with clear prompts.</li>
+                    <li><strong>Verify Payment Method:</strong> For security, I confirmed the new payment method through a verification step, such as a code sent to my phone or email.</li>
+                    <li><strong>Save and Confirm:</strong> After saving, the system confirmed that my billing information was updated successfully.</li>
+                    <li><strong>Review Auto-Pay Settings:</strong> I double-checked my automatic payment preferences to ensure future bills would process correctly.</li>
+                </ol>
+
+                <p class="text-gray-700 mt-6">
+                    Updating personal and payment information on my SYW Account was quick and secure. Regularly reviewing and updating this information ensures smooth account management and avoids payment issues.
+                </p>
+            </div>
+        </section>
+
+
+<section id="section7" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions (FAQ)</h2>
+
+    <div class="space-y-6 text-gray-700">
+
+        <!-- FAQ Item 1 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">1. What is syw.accountonline.com?</h3>
+            <p class="mt-2 leading-relaxed">
+                syw.accountonline.com is the official online portal where Shop Your Way Credit Card users can 
+                log in, manage payments, update personal information, view balance, and track rewards.
+            </p>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">2. How do I log in to my SYW Credit Card account?</h3>
+            <p class="mt-2 leading-relaxed">
+                Go to the <a href="https://www.shopyourway.com/credithub/overview" 
+                class="text-indigo-600">SYW login page</a>, enter your username and password, 
+                and complete any verification steps such as 2FA (if enabled).
+            </p>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">3. What should I do if I forget my password?</h3>
+            <p class="mt-2 leading-relaxed">
+                Click on “Forgot Password” on the login page. Enter your email or username, verify your identity, 
+                and create a new password to regain account access.
+            </p>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">4. Can I change my contact or billing information online?</h3>
+            <p class="mt-2 leading-relaxed">
+                Yes. Log in to your account, go to “Profile” or “Account Settings,” and update your email, phone 
+                number, billing address, or payment method securely.
+            </p>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">5. How do I view or download my monthly statements?</h3>
+            <p class="mt-2 leading-relaxed">
+                After logging in, open the “Statements” section, choose the month you need, and download the PDF 
+                copy directly to your device.
+            </p>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">6. Is my SYW account login secure?</h3>
+            <p class="mt-2 leading-relaxed">
+                Yes. The portal uses encryption and supports two-factor authentication (2FA) to ensure your account 
+                and payment data remain safe.
+            </p>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">7. How can I contact SYW customer support?</h3>
+            <p class="mt-2 leading-relaxed">
+                You can reach customer service through the support section inside your SYW account or on the 
+                Shop Your Way Credit Card help page. They assist with login issues, payments, and account locks.
+            </p>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="border-b pb-4">
+            <h3 class="text-xl font-semibold">8. Can I activate alerts for payments and rewards?</h3>
+            <p class="mt-2 leading-relaxed">
+                Yes. Go to “Alerts & Notifications” in your dashboard and enable reminders for payments, 
+                statement availability, and rewards milestones.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-300 py-6 mt-10">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+
+        <!-- Disclaimer -->
+        <p class="text-xs text-gray-400 max-w-3xl mx-auto">
+            This website is for informational purposes only and is not affiliated with Shop Your Way, Citi Bank, 
+            or syw.accountonline.com. Always use the official website for secure account access.
+        </p>
+
+        <!-- Copyright -->
+        <p class="text-sm text-gray-400">
+            © Syw Accountonline <span id="year"></span> All Rights Reserved.
+        </p>
+    </div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "SYW Account Online Help",
+      "url": "https://syw.accountonline.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://syw.accountonline.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "SYW Account Online Help Center",
+      "url": "https://syw.accountonline.com",
+      "logo": "https://syw.accountonline.com/logo.png",
+      "description": "Independent help center providing information on how to sign in, manage, and troubleshoot SYW Credit Card accounts.",
+      "sameAs": []
+    },
+    {
+      "@type": "WebPage",
+      "name": "SYW Account Online: Login, Manage, Create Account, Reset Password",
+      "url": "https://syw.accountonline.com",
+      "description": "Step-by-step guide on logging in, managing your SYW Credit Card, creating a new account, resetting your password, viewing statements, updating information, and FAQs.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://syw.accountonline.com"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://syw.accountonline.com/images/2.jpg"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is syw.accountonline.com?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "syw.accountonline.com is the official online portal where Shop Your Way Credit Card users can log in, manage payments, update personal information, view balance, and track rewards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I log in to my SYW Credit Card account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to the login page, enter your username and password, and complete two-factor authentication if enabled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if I forget my password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click on 'Forgot Password,' enter your email or username, verify identity using the code, and create a new password."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change my contact or billing information online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after logging in, you can update email, phone number, billing address, and payment information in your account settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I view or download my monthly statements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Log in, go to the Statements section, select a month, and download the PDF copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my SYW account login secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The portal uses encryption and supports two-factor authentication (2FA) to protect your account and data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact SYW customer support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact support through the help section inside your SYW account or on the official Shop Your Way support page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I enable alerts for payments and rewards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, go to Alerts & Notifications in your dashboard and enable reminders for payments, statements, and rewards."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+      
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
